@@ -34,13 +34,14 @@ resume/
 </div>
 ```
 
-## Deploying to Cloudflare Pages
+## Deploying to Netlify
 
-1. Push this repo to GitHub
-2. In the [Cloudflare Dashboard](https://dash.cloudflare.com), go to **Workers & Pages → Create → Pages → Connect to Git**
-3. Select this repository
+1. Go to [netlify.com](https://netlify.com) and log in with GitHub
+2. Click **Add new site → Import an existing project → GitHub**
+3. Select the `toloughlin/claude` repository
 4. Build settings:
+   - **Base directory:** `resume`
    - **Build command:** *(leave blank)*
-   - **Build output directory:** `/`
-5. Deploy — Cloudflare will serve `index.html` directly
-6. Add your custom domain `tomsresu.me` under **Custom domains** in the Pages project settings
+   - **Publish directory:** `resume`
+5. Click **Deploy site**
+6. Add your custom domain `tomsresu.me` under **Domain management** in the site settings
